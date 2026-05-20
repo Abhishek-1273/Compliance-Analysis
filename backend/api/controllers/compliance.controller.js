@@ -103,9 +103,11 @@ Write a detailed summary of potential risks, compliance gaps, and actionable rec
 
     return res.status(500).json({
       message: "Failed to analyze compliance",
-      error: error.message,
-      source: errorSource,
-      details: error.response?.data || error.data || "No additional details"
+      ...(process.env.NODE_ENV !== 'production' && {
+        error: error.message,
+        source: errorSource,
+        details: error.response?.data || error.data
+      })
     });
   }
 };

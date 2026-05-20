@@ -3,7 +3,7 @@ import { Auth } from "../models/auth.schema.js";
 
 export const signup = async (req, res) => {
     try {
-        const { userName, email, password, role } = req.body;
+        const { userName, email, password } = req.body;
         if (!userName || !password || !email) {
             return res.status(400).json({
                 message: "All fields are required",
@@ -19,7 +19,7 @@ export const signup = async (req, res) => {
             email,
             userName,
             password,
-            role: req.body.role || "user"
+            role: "user"
         });
 
         return res.status(201).json({
@@ -58,13 +58,15 @@ export const signin = async (req, res) => {
         // TOKEN GENERATION
 
         const token = await genToken(user._id, user.userName, user.role);
+        const isProduction = process.env.NODE_ENV === 'production';
 
         return res.cookie("token", token, {
             httpOnly: true,
-            sameSite: "strict",
-            secure: false,
+            sameSite: isProduction ? "none" : "strict",
+            secure: isProduction,
             maxAge: 24 * 60 * 60 * 1000,
         })
+
             .status(200).json({
                 message: "Signin Successfully",
                 data: {
