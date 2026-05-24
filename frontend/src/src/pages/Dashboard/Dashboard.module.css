@@ -205,4 +205,3 @@
     grid-template-columns: 1fr !important;
   }
 }
-@media (max-width: 768px) { .page, .pageWrapper, .container { padding-bottom: 3rem !important; } }

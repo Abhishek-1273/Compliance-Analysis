@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.25rem;
 }
 
 .formHeader {
@@ -418,19 +418,4 @@
 
 .dark .previewThumb {
     border-color: #334155;
-}
-@media (max-width: 768px) {
-  [class*="overlay"] {
-    padding: 0.5rem !important;
-    align-items: flex-end !important;
-  }
-
-  [class*="drawer"], [class*="form"], [class*="Form"] {
-    width: 100% !important;
-    max-width: 100% !important;
-    border-radius: 1rem 1rem 0 0 !important;
-    padding: 1.25rem !important;
-    max-height: 90vh !important;
-    overflow-y: auto !important;
-  }
 }
