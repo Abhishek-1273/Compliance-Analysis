@@ -399,33 +399,3 @@
         padding: 1.5rem;
     }
 }
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem !important;
-  }
-
-  .header h1 {
-    font-size: 1.6rem;
-  }
-
-  .detailsGrid,
-  .regulatoryGrid {
-    grid-template-columns: 1fr !important;
-    gap: 0.75rem !important;
-  }
-
-  /* Table horizontal scroll on mobile */
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Action buttons full width on mobile */
-  button[class*="addBtn"],
-  button[class*="Btn"] {
-    padding: 0.6rem 1rem !important;
-    font-size: 0.75rem !important;
-  }
-}

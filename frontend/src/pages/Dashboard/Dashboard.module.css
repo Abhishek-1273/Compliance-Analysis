@@ -172,36 +172,3 @@
         padding: 1.5rem;
     }
 }
-
-@media (max-width: 768px) {
-  .page {
-    padding: 1rem !important;
-  }
-
-  .header {
-    margin-bottom: 1.25rem;
-  }
-
-  .header h1 {
-    font-size: 1.6rem;
-  }
-
-  .statsGrid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.75rem !important;
-  }
-
-  .card {
-    padding: 1rem !important;
-  }
-
-  .cardValue {
-    font-size: 2rem !important;
-  }
-}
-
-@media (max-width: 380px) {
-  .statsGrid {
-    grid-template-columns: 1fr !important;
-  }
-}

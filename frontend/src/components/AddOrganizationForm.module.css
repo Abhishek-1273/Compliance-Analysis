@@ -216,18 +216,3 @@
     border-color: #2dd4bf;
     box-shadow: 0 0 0 3px rgba(45, 212, 191, .1);
 }
-@media (max-width: 768px) {
-  [class*="overlay"] {
-    padding: 0.5rem !important;
-    align-items: flex-end !important;
-  }
-
-  [class*="drawer"], [class*="form"], [class*="Form"] {
-    width: 100% !important;
-    max-width: 100% !important;
-    border-radius: 1rem 1rem 0 0 !important;
-    padding: 1.25rem !important;
-    max-height: 90vh !important;
-    overflow-y: auto !important;
-  }
-}

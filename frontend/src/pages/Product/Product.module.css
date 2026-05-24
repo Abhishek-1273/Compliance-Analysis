@@ -745,34 +745,3 @@
     align-self: center;
   }
 }
-@media (max-width: 768px) {
-  .pageWrapper {
-    padding: 1rem !important;
-  }
-
-  .topHeader {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.75rem !important;
-    margin-bottom: 1.25rem !important;
-  }
-
-  .topHeader h1 {
-    font-size: 1.6rem !important;
-  }
-
-  /* Table horizontal scroll */
-  table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Modal full width on mobile */
-  [class*="modal"], [class*="Modal"] {
-    width: 95vw !important;
-    max-width: 95vw !important;
-    margin: 0.5rem !important;
-    padding: 1.25rem !important;
-  }
-}

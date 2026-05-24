@@ -625,33 +625,3 @@
     align-items: flex-start;
   }
 }
-@media (max-width: 768px) {
-  .pageWrapper {
-    padding: 1rem !important;
-  }
-
-  [class*="header"] h1 {
-    font-size: 1.6rem !important;
-  }
-
-  .frameworkGrid {
-    grid-template-columns: 1fr !important;
-  }
-
-  [class*="detailHeader"] {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.75rem !important;
-  }
-
-  /* Search bar full width */
-  [class*="searchWrap"] {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
-  /* Requirement boxes */
-  [class*="requirementBox"] {
-    padding: 1rem !important;
-  }
-}
