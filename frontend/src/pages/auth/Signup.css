@@ -257,6 +257,9 @@ body {
 }
 
 @media (max-width:820px) {
+    .su {
+    padding: 0 1rem;
+}
     .su-root {
         flex-direction: column;
     }
