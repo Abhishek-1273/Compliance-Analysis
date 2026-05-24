@@ -444,3 +444,48 @@
   }
 
 }
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem !important;
+  }
+
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .reportsGrid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .modalOverlay {
+    padding: 0.5rem !important;
+    align-items: flex-end !important;
+  }
+
+  .modal {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 92vh !important;
+    border-radius: 1rem 1rem 0 0 !important;
+  }
+
+  .modalHeader {
+    padding: 1rem 1.25rem !important;
+  }
+
+  .modalBody {
+    padding: 1rem 1.25rem !important;
+  }
+
+  .modalFooter {
+    padding: 0.75rem 1.25rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .statsRow {
+    grid-template-columns: 1fr !important;
+  }
+}
