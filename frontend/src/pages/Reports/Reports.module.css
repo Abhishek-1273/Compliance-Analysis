@@ -429,6 +429,11 @@
 .closeModalBtn:hover {
   background: #0f766e;
 }
+@media (max-width: 768px) {
+  .reportsGrid {
+    padding-bottom: 4rem !important;
+  }
+}
 
 @media (max-width: 820px) {
   .page {

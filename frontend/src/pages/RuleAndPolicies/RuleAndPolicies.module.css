@@ -8,7 +8,6 @@
 }
 
 .light {
-  background: #f8fafc;
   color: #1e293b;
 }
 
@@ -625,6 +624,7 @@
     align-items: flex-start;
   }
 }
+
 @media (max-width: 768px) {
   .pageWrapper {
     padding: 1rem !important;
@@ -636,6 +636,11 @@
 
   .frameworkGrid {
     grid-template-columns: 1fr !important;
+    padding-bottom: 4rem;
+  }
+
+  .detailView {
+    padding-bottom: 4rem;
   }
 
   [class*="detailHeader"] {
