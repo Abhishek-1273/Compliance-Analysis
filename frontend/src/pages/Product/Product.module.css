@@ -747,7 +747,7 @@
 }
 @media (max-width: 768px) {
   .pageWrapper {
-    padding: 1rem !important;
+    padding: 1rem 1rem 5rem 1rem !important;
   }
 
   .topHeader {

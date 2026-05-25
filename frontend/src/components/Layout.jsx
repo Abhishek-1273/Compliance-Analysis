@@ -27,7 +27,16 @@ function Layout() {
       theme={theme}
       branding={{
         title: (
-          <span style={{ color: "#0d9488", fontFamily: 'Averia Libre', fontSize: "30px", fontWeight: "900" }}>
+          <span style={{
+            color: "#0d9488",
+            fontFamily: 'Averia Libre',
+            fontSize: "clamp(25px, 3vw, 25px)",
+            fontWeight: "900",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            maxWidth: "clamp(250px, 40vw, 300px)",
+            display: "block",
+          }}>
             Compliance Analysis
           </span>
         ),
